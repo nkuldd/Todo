@@ -2,8 +2,6 @@
 const models = require('./db');
 const express = require('express');
 const router = express.Router();
-
-/************** 创建(create) 读取(getList) 更新(edit) 删除(delete) **************/
 //增加事项
 router.post('/api/todo/create',(req,res)=>{
     let newtodo = new models.Todo({
@@ -79,6 +77,4 @@ router.post('/api/todo/edit', (req, res) => {
         }
     })
 })
-
-
 module.exports = router;

@@ -172,6 +172,7 @@ export default {
         console.log(res.msg)
       }else{
         this.list.splice(index,1);
+        this.ItemSearchClear();
         console.log(this.list)
         if(item.status){
           this.done-=1;
